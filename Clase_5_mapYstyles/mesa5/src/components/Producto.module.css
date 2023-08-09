@@ -1,0 +1,12 @@
+.li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
