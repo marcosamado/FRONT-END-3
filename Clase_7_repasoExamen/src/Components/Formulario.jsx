@@ -17,6 +17,8 @@ const Formulario = ({addTarea}) => {
     }
 
     const handleSubmit = (e) => {
+
+        
         e.preventDefault();
         
         if(datosForm.titulo.trim() && datosForm.titulo.length >= 3 && datosForm.descripcion.trim() && datosForm.descripcion.length >= 6){
