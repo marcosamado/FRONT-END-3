@@ -9,6 +9,7 @@ const Home = () => {
         const res = await fetch("https://api.punkapi.com/v2/beers");
         const data = await res.json();
         setBeers(data);
+        console.log(data);
     };
 
     useEffect(() => {
@@ -16,7 +17,6 @@ const Home = () => {
     }, []);
     return (
         <Layout>
-            <h1>Home</h1>
             <div className="container flex flex-wrap">
                 {beers.map((beer) => (
                     <div className="w-auto h-auto border m-28">

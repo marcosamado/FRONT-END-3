@@ -1,5 +1,4 @@
 import React from "react";
-import About from "./About";
 // import imgHome from "/assets/IMG_E0004.JPG";
 
 const Home = () => {

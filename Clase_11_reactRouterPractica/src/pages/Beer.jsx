@@ -9,6 +9,8 @@ const Beer = () => {
     const getBeers = async () => {
         const res = await fetch(`https://api.punkapi.com/v2/beers/${id}`);
         const data = await res.json();
+        console.log(data);
+
         setBeer(data[0]);
     };
 
@@ -16,15 +18,18 @@ const Beer = () => {
         getBeers();
     }, []);
 
-    const { name, description, image_url } = beer;
+    // const { name, description, image_url } = beer;
 
     return (
         <Layout>
             <div>
-                <h1>{name}</h1>
-                <p>{description}</p>
+                <h1>{beer?.name}</h1>
+                <p>{beer?.description}</p>
                 <div className="w-44 h-44">
-                    <img src={image_url} alt="imagen de una lata de cerveza" />
+                    <img
+                        src={beer?.image_url}
+                        alt="imagen de una lata de cerveza"
+                    />
                 </div>
             </div>
         </Layout>
