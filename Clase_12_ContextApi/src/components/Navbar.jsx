@@ -4,7 +4,6 @@ import { useContext } from "react";
 
 const Navbar = () => {
     const { theme, handleChangeTheme } = useContext(themeContext);
-
     return (
         <div>
             <p>Inicio</p>

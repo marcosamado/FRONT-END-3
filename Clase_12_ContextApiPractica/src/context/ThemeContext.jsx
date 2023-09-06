@@ -26,7 +26,7 @@ const ContextProvider = ({ children }) => {
     // };
     // theme, setTheme, handleChangeTheme, themes,
     return (
-        <themeContext.Provider value={{ number, setNumber, handleClick }}>
+        <themeContext.Provider value={{ number, handleClick }}>
             {children}
         </themeContext.Provider>
     );
